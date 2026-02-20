@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css"
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
 
 <html lang="en">
@@ -9,9 +10,11 @@ import "../styles/global.css"
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>DanoBlader Hub</title>
 	</head>
-	<body class="bg-black text-white flex items-center justify-center h-screen">
-		<h1 class="text-3xl font-bold">Dano Blader</h1>
-	</body>
+	<BaseLayout title="DanoBlader | Blader Hub">
+		<main class="flex items-center justify-center min-h-screen">
+			<h1 class="text-3xl font-bold">DanoBlader</h1>
+		</main>
+	</BaseLayout>
 </html>
